@@ -1,6 +1,5 @@
 # AngularMaterialDashboard
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+A simple responsive dashboard using angular material schematics and the ng2-charts package. 
 
 ## Development server
 
