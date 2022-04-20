@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { map } from 'rxjs/operators';
-import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+import {Component} from '@angular/core';
+import {map} from 'rxjs/operators';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,18 +13,18 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 1, rows: 1 },
-          { title: 'Card 2', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'Card 1', cols: 1, rows: 1, chart: 'bar' },
+          { title: 'Card 2', cols: 1, rows: 1, chart: 'line' },
+          { title: 'Card 3', cols: 1, rows: 1, chart: 'radar' },
+          { title: 'Card 4', cols: 1, rows: 1, chart: 'doughnut' }
         ];
       }
 
       return [
-        { title: 'Card 1', cols: 2, rows: 1 },
-        { title: 'Card 2', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 2 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Card 1', cols: 2, rows: 1, chart: 'bar' },
+        { title: 'Card 2', cols: 1, rows: 1, chart: 'line' },
+        { title: 'Card 3', cols: 1, rows: 2, chart: 'radar' },
+        { title: 'Card 4', cols: 1, rows: 1, chart: 'doughnut' }
       ];
     })
   );
