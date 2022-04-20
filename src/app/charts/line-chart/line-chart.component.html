@@ -1,4 +1,6 @@
-<canvas baseChart width="400" height="400"
-                [data]="lineChartData"
-                [options]="lineChartOptions"
-                [type]="lineChartType"></canvas>
+<div class="chartContainer">
+  <canvas [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"
+          baseChart
+          height="400"
+          width="400"></canvas>
+</div>

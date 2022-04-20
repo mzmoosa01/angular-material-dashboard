@@ -15,6 +15,7 @@ import { LineChartComponent } from './charts/line-chart/line-chart.component';
 import { BarChartComponent } from './charts/bar-chart/bar-chart.component';
 import { DoughnutChartComponent } from './charts/doughnut-chart/doughnut-chart.component';
 import { RadarChartComponent } from './charts/radar-chart/radar-chart.component';
+import { DashboardItemComponent } from './dashboard-item/dashboard-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RadarChartComponent } from './charts/radar-chart/radar-chart.component'
     LineChartComponent,
     BarChartComponent,
     DoughnutChartComponent,
-    RadarChartComponent
+    RadarChartComponent,
+    DashboardItemComponent
   ],
   imports: [
     NgChartsModule,
